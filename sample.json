@@ -1,0 +1,59 @@
+{
+    "info": {
+      "name": "Sample Postman Collection",
+      "description": "This is a sample Postman collection",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "GetUser",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://api.example.com/users",
+            "protocol": "https",
+            "host": [
+              "api",
+              "example",
+              "com"
+            ],
+            "path": [
+              "users"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "CreateUser",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{ \"name\": \"John Doe\", \"email\": \"john.doe@example.com\" }"
+          },
+          "url": {
+            "raw": "https://api.example.com/users",
+            "protocol": "https",
+            "host": [
+              "api",
+              "example",
+              "com"
+            ],
+            "path": [
+              "users"
+            ]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+  
